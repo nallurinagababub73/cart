@@ -10,35 +10,29 @@ pipeline {
             sh 'npm install'
           }
         }
-   }
-   stages {
-        stage ('Unit test') {
+        stage ('test') {
           steps {
-            sh 'echo test passed'
+            sh 'echo test'
+
           }
         }
-   }
-   stages {
-        stage ('Code Coverage') {
+        stage ('Code analysis') {
           steps {
-            sh 'echo Code Coverage'
+            sh 'echo Code analysis'
+
           }
         }
-   }
-   stages {
-        stage ('security checks') {
+        stage ('Security scans') {
           steps {
-            sh 'echo security check passed'
+            sh 'echo Security scans'
+
           }
         }
-   }
-   stages {
         stage ('Publish an artifactory') {
           steps {
-            sh 'echo published an artifactory'
+            sh 'echo Publish an artifactory'
+
           }
         }
    }
-
-
 }
