@@ -38,7 +38,6 @@ pipeline {
           steps {
             sh 'echo Publish an artifactory for tag'
             sh 'env'
-            //
 
           }
         }
