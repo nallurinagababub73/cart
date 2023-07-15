@@ -33,7 +33,7 @@ pipeline {
         }
         stage ('Publish an artifactory') {
           steps {
-            sh 'echo Publish an artifactory'
+            sh 'echo Publish an artifactory for tag'
             sh 'env'
 
           }
