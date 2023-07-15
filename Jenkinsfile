@@ -34,6 +34,7 @@ pipeline {
         stage ('Publish an artifactory') {
           steps {
             sh 'echo Publish an artifactory'
+            sh 'env'
 
           }
         }
